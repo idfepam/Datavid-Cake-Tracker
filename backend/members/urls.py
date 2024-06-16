@@ -1,10 +1,12 @@
+from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import MemberViewSet
+from members.views import MemberViewSet
 
 router = DefaultRouter()
 router.register(r'members', MemberViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
 ]
