@@ -152,42 +152,8 @@ The API is documented using Swagger. To view the documentation, navigate to `htt
 
 ### UML Diagram
 
-  +---------------------------------+
-  |             React               |
-  |---------------------------------|
-  | - AddMember                     |
-  | - MemberList                    |
-  |---------------------------------|
-  | + fetchMembers()                |
-  | + fetchSortedMembers()          |
-  | + handleSortToggle()            |
-  +---------------------------------+
-                |
-                V
-  +---------------------------------+
-  |             Django              |
-  |---------------------------------|
-  | + MemberViewSet                 |
-  |   - list()                      |
-  |   - create()                    |
-  |   - sorted_by_birthday()        |
-  |---------------------------------|
-  | + MemberSerializer              |
-  | + Member                        |
-  +---------------------------------+
-                |
-                V
-  +---------------------------------+
-  |             MySQL               |
-  |---------------------------------|
-  | + members_member                |
-  |   - id                          |
-  |   - first_name                  |
-  |   - last_name                   |
-  |   - birth_date                  |
-  |   - country                     |
-  |   - city                        |
-  +---------------------------------+
+![image](https://github.com/idfepam/Datavid-Cake-Tracker/assets/105879784/8aa62085-5d98-4bb3-a2e5-d8a540d6ccab)
+
 
 
 
