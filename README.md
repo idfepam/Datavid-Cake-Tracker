@@ -225,18 +225,4 @@ Frontend
 
 The sequence diagram below outlines the main interactions in the system:
 
-User -> React Frontend -> Django Backend -> MySQL Database
-        |                 |                    |
-        | Add Member      |                    |
-        |---------------->| Create Member      |
-        |                 |------------------->|
-        |                 |                    |
-        |                 |                    |
-        | Get Members     |                    |
-        |<----------------| Fetch All Members  |
-        |                 |<-------------------|
-        |                 |                    |
-        | Sort Members    |                    |
-        |<----------------| Sort by Birthday   |
-        |                 |<-------------------|
-        |                 |                    |
+![image](https://github.com/idfepam/Datavid-Cake-Tracker/assets/105879784/666d252d-ca0c-4340-b0a1-9416cc68b06f)
